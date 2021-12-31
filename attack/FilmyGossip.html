@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<!-- Run this on vs code with live server extension     -->
+    
+    
     <link rel="stylesheet" href="style.css">
     <title>FilmyGossip</title>
     <script>
@@ -13,9 +19,13 @@
                 content += '<li>' + data[i].name + '</li>';
             }
             $("#list").append(content);
+// "  here content from data.json is appended to element with id list as it is written in data.json
+//             which may be malicious html code, also which can modify webpage" 
         });
     </script>
 </head>
+    
+    
 <body>
     <h1 id="heading"> Welcome to FilmyGossip </h1>
     <br>
@@ -27,6 +37,7 @@
         <ul id="list"></ul>
     </div>
     <hr>
+    
     <footer>
         <p>FilmyGossip
             <span> &copy; 2019</span>
@@ -37,5 +48,6 @@
         <p>Mail Id: filmyupdates@gossip.com</p>
         <p id="footer">** Disclaimer: This demo is only for Educational purpose. Please do not try this attack on any commercial website **
     </footer>
+    
 </body>
 </html>
